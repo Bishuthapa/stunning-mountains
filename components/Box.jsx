@@ -8,4 +8,4 @@ function Box(){
     )
 }
 
-export default Box
+export default Boxgit
