@@ -1,12 +1,9 @@
 function Box(){
     return(
         <>
-        <div className="text-3xl">
-            <image path="/public/annapurna/caption.jpg"></image>
-            why this
-        </div>
+            <img className="h-full w-full" src="annapurna/caption.jpg"/>          
         </>
     )
 }
 
-export default Boxgit
+export default Box
