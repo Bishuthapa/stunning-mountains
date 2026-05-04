@@ -1,9 +1,11 @@
-function Box(){
-    return(
+import { MountEverestPicture } from "@/utils/picture";
+
+// in JSX
+function Box() {
+    return (
         <>
-            <img className="h-full w-full" src="annapurna/caption.jpg"/>          
+            <MountEverestPicture priority className="rounded-lg" />
         </>
     )
 }
-
-export default Box
+export default Box;
