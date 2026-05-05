@@ -24,3 +24,84 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+::selection {
+  background: #10b981;
+  color: #052e16;
+}
+
+.animate-fade-in {
+  animation: fade-in 700ms ease both;
+}
+
+.animate-rise-in {
+  animation: rise-in 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-scale-in {
+  animation: scale-in 800ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.mountain-card-shine::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 20%,
+    rgb(255 255 255 / 0.22) 45%,
+    transparent 70%
+  );
+  transform: translateX(-130%);
+  transition: transform 700ms ease;
+}
+
+.mountain-card-shine:hover::after {
+  transform: translateX(130%);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rise-in {
+  from {
+    filter: blur(8px);
+    opacity: 0;
+    transform: translateY(28px) scale(0.98);
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    filter: blur(10px);
+    opacity: 0;
+    transform: scale(1.04);
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+  }
+}

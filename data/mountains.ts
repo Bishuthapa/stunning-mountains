@@ -7,6 +7,9 @@ export type Mountain = {
   elevation: string;
   location: string;
   range: string;
+  season: string;
+  nearestTown: string;
+  difficulty: string;
   summary: string;
   description: readonly string[];
   facts: readonly {
@@ -23,6 +26,9 @@ export const mountains = [
     elevation: "8,848.86 m",
     location: "Solukhumbu District, Nepal",
     range: "Mahalangur Himal",
+    season: "Spring and autumn",
+    nearestTown: "Namche Bazaar",
+    difficulty: "Extreme expedition",
     summary:
       "The highest mountain on Earth, known in Nepal as Sagarmatha and in Tibet as Chomolungma.",
     description: [
@@ -42,6 +48,9 @@ export const mountains = [
     elevation: "8,586 m",
     location: "Eastern Nepal and Sikkim border",
     range: "Kanchenjunga Himal",
+    season: "Spring and autumn",
+    nearestTown: "Taplejung",
+    difficulty: "Remote expedition",
     summary:
       "The world's third-highest mountain, treasured for its huge massif and remote eastern Himalayan landscape.",
     description: [
@@ -61,6 +70,9 @@ export const mountains = [
     elevation: "8,516 m",
     location: "Solukhumbu District, Nepal",
     range: "Mahalangur Himal",
+    season: "Spring",
+    nearestTown: "Namche Bazaar",
+    difficulty: "Extreme expedition",
     summary:
       "A neighbor of Everest with one of the most dramatic south faces in the Himalaya.",
     description: [
@@ -80,6 +92,9 @@ export const mountains = [
     elevation: "8,505 m",
     location: "Taplejung District, Nepal",
     range: "Kanchenjunga Himal",
+    season: "Spring and autumn",
+    nearestTown: "Taplejung",
+    difficulty: "Remote expedition",
     summary:
       "Also called Kanchenjunga West, this high summit is part of the huge Kanchenjunga massif.",
     description: [
@@ -99,6 +114,9 @@ export const mountains = [
     elevation: "8,485 m",
     location: "Sankhuwasabha District, Nepal",
     range: "Mahalangur Himal",
+    season: "Spring and autumn",
+    nearestTown: "Khandbari",
+    difficulty: "Technical expedition",
     summary:
       "A pyramid-shaped giant east of Everest, respected for its clean shape and difficult climbing.",
     description: [
@@ -118,6 +136,9 @@ export const mountains = [
     elevation: "8,167 m",
     location: "Gandaki Province, Nepal",
     range: "Dhaulagiri Himal",
+    season: "Spring and autumn",
+    nearestTown: "Beni",
+    difficulty: "Serious expedition",
     summary:
       "A massive white peak west of the Kali Gandaki Gorge, famous for its steep faces and isolated beauty.",
     description: [
@@ -137,6 +158,9 @@ export const mountains = [
     elevation: "8,163 m",
     location: "Gorkha District, Nepal",
     range: "Mansiri Himal",
+    season: "Spring and autumn",
+    nearestTown: "Sama Gaun",
+    difficulty: "High expedition",
     summary:
       "The mountain of the spirit, rising above remote valleys and classic high-pass trekking country.",
     description: [
@@ -156,6 +180,9 @@ export const mountains = [
     elevation: "8,091 m",
     location: "Gandaki Province, Nepal",
     range: "Annapurna Himal",
+    season: "Spring and autumn",
+    nearestTown: "Pokhara",
+    difficulty: "Serious expedition",
     summary:
       "A sacred and powerful Himalayan massif surrounded by some of Nepal's most loved trekking routes.",
     description: [
@@ -175,6 +202,9 @@ export const mountains = [
     elevation: "7,893 m",
     location: "Gorkha District, Nepal",
     range: "Mansiri Himal",
+    season: "Spring and autumn",
+    nearestTown: "Sama Gaun",
+    difficulty: "Remote expedition",
     summary:
       "A striking peak in the Manaslu region, known for its sharp profile and remote mountain setting.",
     description: [
