@@ -1,4 +1,5 @@
 const path = "/mountain-images";
+
 export const images = {
   everest: {
     src: `${path}/mount everest/img.webp`,
@@ -24,10 +25,9 @@ export const images = {
     width: 1200,
     height: 800,
   },
-
-  kanachanjanga: {
+  kanchenjunga: {
     src: `${path}/kanchanjanga/img.jpg`,
-    alt: "Kanachanjanga",
+    alt: "Kanchenjunga mountain range",
     width: 1200,
     height: 800,
   },
@@ -50,12 +50,12 @@ export const images = {
     height: 800,
   },
 
-  yalungkhang : {
+  yalungKang: {
     src: `${path}/yalung-kang/img.jpg`,
-    alt: "Yalung-Kang",
+    alt: "Yalung Kang",
     width: 1200,
     height: 800,
-  }
+  },
 
 } as const;
 
