@@ -87,7 +87,7 @@ export function ThemeToggle() {
   return (
     <button
       aria-label={`Switch to ${nextTheme} mode`}
-      className="fixed right-4 top-4 z-50 flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border border-zinc-200 bg-white/90 text-zinc-800 shadow-lg shadow-zinc-950/10 backdrop-blur transition-all duration-300 hover:scale-105 hover:bg-amber-50 active:scale-95 dark:border-zinc-700 dark:bg-zinc-900/90 dark:text-zinc-100 dark:hover:bg-indigo-950"
+      className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full border border-white/25 bg-white/15 text-white shadow-lg shadow-black/10 backdrop-blur transition-all duration-300 hover:scale-105 hover:bg-white/25 active:scale-95 dark:border-zinc-700 dark:bg-zinc-950/60 dark:text-zinc-100 dark:hover:bg-indigo-950"
       suppressHydrationWarning
       type="button"
       onClick={() => saveTheme(nextTheme)}
